@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Modern</title>
+  <link rel="stylesheet" href="inde.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="calculator" id="calculator">
+      <h1>🧮 Kalkulator Modern</h1>
+
+      <div class="input-group">
+        <input type="number" id="num1" placeholder="Angka pertama" />
+        <input type="number" id="num2" placeholder="Angka kedua" />
+        <select id="operator">
+          <option value="+">Tambah (+)</option>
+          <option value="-">Kurang (-)</option>
+          <option value="*">Kali (×)</option>
+          <option value="/">Bagi (/)</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button onclick="hitung()">Hitung</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="toggleDarkMode()">🌗 Mode</button>
+      </div>
+
+      <div class="result" id="hasil">Hasil akan muncul di sini</div>
+
+      <div class="history">
+        <h3>Riwayat Perhitungan</h3>
+        <div id="riwayat"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
